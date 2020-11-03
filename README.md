@@ -22,6 +22,7 @@ colors scheme and style organized per item
 scripts.js
 where magic gets to live... setup, execution, main functions and aux functions
 
+Next steps
 ================
 
-Next steps: make a vue version as a new project
+Make a vue version as a new project

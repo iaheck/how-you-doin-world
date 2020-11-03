@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>How you doin world</title>
+      <link rel="stylesheet" href="styles.css"> <!-- colores -->
+      <link rel="stylesheet" href="layout.css"> <!-- flexbox -->
+      <script type="text/javascript" src="scripts.js"></script>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="header">
+        <li>
+          <a class="navLinkActive" href="index.html">How you doin World</a>
+        </li>
+        <li>
+          <a class="navLink" href="about.html"">Acerca de</a>
+        </li>
+      </div>
+      </nav>
+      <div class="tile">
+        <img class="tileImage" src="https://asset-preservation.com/aps/wp-content/uploads/2020/04/stocks-vs-etfs.jpg" alt="Stocks at a newspaper" width="300" height="200">
+        
+        <div class="tileText">
+          <p class="result" id="mercmov"></p><img id="loading" class= "loading" src="loading.gif"></img>
+          <p class="tileTitle">Movimiento mercado</p>
+          <hr>          
+          <p class="tileFoot">
+            Estimado a partir del movimiento de <span class= "hoverNote" title="SPDR S&P 500 Trust ETF">SPY</span>,<br>
+            desfasado 15 minutos y provisto por <br>
+            <a class="source" href="https://iexcloud.io">IEX Cloud</a>
+          </p>
+        </div>
+      </div>
+      <div class="tile">
+        <img class="tileImage" src="https://media.istockphoto.com/photos/cash-us-dollar-background-american-dollars-money-picture-id1138471562?k=6&m=1138471562&s=170667a&w=0&h=c4lXJdZDqHQMYtrXZZ1kdHjELxZVOTcHHc-kgaCRi0w=" alt="Dollars" width="300" height="200">
+        
+        <div class="tileText">
+          <p class="result" id="usdmov"></p><img id="loading2" class= "loading" src="loading.gif"></img>
+          <p class="tileTitle">Movimiento dólar</p>
+          <hr>
+          <p class="tileFoot">
+            Información en tiempo real provista por <br>
+            <a class="source" href="https://www.alphavantage.co/">Alpha Vantage</a>
+          </p>
+        </div>
+      </div>
+      <div class="tile">
+        <img class="tileImage" src="https://alcansa.com.co/images/peso-chileno-FB.jpg" alt="Chilean pesos" width="300" height="200">
+        <div class="tileText">
+          <p class="result" id="impact"></p><img id="loading3" class= "loading" src="loading.gif"></img>
+          <p class="tileTitle">Impacto total</p>
+          <hr>
+          <p class="tileFoot">Actualizado a las <span id="time"></span></p>
+        </div>
+      </div>
+      <div class="footer">Hecho con ❤️ desde Honolulu (ya quisiera)</div>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.getElementById('time').innerHTML = today.toLocaleTimeString();
+</script>

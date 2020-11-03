@@ -1,0 +1,147 @@
+/* || 1. Colors scheme*/
+:root {
+    --lightText: white;
+    --primaryLight:rgb(225, 179, 130);
+    --primary:rgb(200, 150, 102);
+    --secondaryLight: rgb(0, 129, 138);
+    --secondaryMedium: rgb(45, 84, 94);
+    --secondary: rgb(18, 52, 59);
+}
+
+/* || 2. Basic layout elements*/
+body {
+    background: var(--secondaryMedium);
+    color: var(--lightText);
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    background:var(--secondary);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* || 3. Navigation bar */
+.header {
+    text-align: center;
+    background:var(--secondary);
+    color: white;
+    padding: 1px 20px;
+}
+
+li {
+    display: inline-block;
+    margin: 0px 5px 0px;
+    line-height: 3;
+}
+
+.navLink, .navLinkActive {
+    text-decoration: none;
+    color: var(--secondary);
+    background: var(--primary);
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 30px;
+}
+
+.navLinkActive {
+    background: var(--primaryLight);
+}
+
+.navLink:hover, .navLinkActive:hover {
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+a:hover {
+    color: black;
+    background:var(--primaryLight);
+}
+
+a:active {
+    color: black;
+    background:var(--primary);
+}
+
+/* || 4. Tiles styles (pun intended)*/
+.tile, .bigtile {
+    background:var(--primary);
+    border-radius: 7px;
+    margin: 20px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+/* 4.1 Tile images */
+.tileImage {
+    border-radius: 7px 7px 0px 0px;
+}
+
+.TileCircleImg {
+    border-radius: 47%;
+    width: 30%;
+    max-width: 200px;
+    height: width;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+/* 4.2 Tile body */
+.tileTitle {
+    text-align: center;
+    font-size: 20px;
+}
+
+.tileText {
+    padding: 10px;
+}
+
+.result {
+    color: white;
+    font-size: 32px;
+    text-align: center; 
+}
+
+.loading {
+    width: 40px;
+    height: 40px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 4.3 Tile footer */
+
+hr {
+    width: 80%;
+}
+
+.tileFoot {
+    text-align: center;
+    font-size: 12px;
+}
+
+.source {
+    text-decoration: none;
+    color:var(--primary);
+    background:var(--secondary);
+    padding: 1px;
+    margin-top: 30px;
+}
+
+.hoverNote {
+    background:var(--primaryLight);
+    padding: 1px;
+    color:var(--secondary);
+}
+
+.hoverNote, .source {
+    border-radius: 3px;
+}

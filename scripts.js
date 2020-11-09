@@ -142,7 +142,7 @@ function stringDateFull(date) {
   "July", "August", "September", "October", "November", "December"
   ];
   
-  let dd = String(date.getDate()).padStart(2, '0');
+  let dd = String(date.getDate());
   let month = monthNames[date.getMonth()];
   let yyyy = date.getFullYear();
 
